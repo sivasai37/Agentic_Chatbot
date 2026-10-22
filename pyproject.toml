@@ -1,0 +1,27 @@
+[project]
+name = "firstproject"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Sivasai", email = "mokara.sivasai28@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "faiss-cpu>=1.15.1",
+    "langchain>=1.4.7",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.6.13",
+    "langchain-groq>=1.1.3",
+    "langchain-openai>=1.7.2",
+    "langgraph>=1.2.16",
+    "streamlit>=1.66.1",
+    "tavily-python>=0.8.5",
+]
+
+[project.scripts]
+firstproject = "firstproject:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
